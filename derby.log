@@ -1,7 +1,7 @@
 ----------------------------------------------------------------
-Sun Apr 24 16:15:55 BRT 2022:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0180-5d00-7ce6-000003445c20 
-on database directory memory:/home/emanos/Downloads/curso/0c6e3624-ea1e-40d4-914d-b01689d3342e with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@2aae9190 
+Mon Apr 25 21:41:19 BRT 2022:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0180-6350-c286-000003e7c870 
+on database directory memory:/home/emanos/Downloads/curso/079c2f54-8638-4449-97ea-9ab04b668259 with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@42110406 
 Loaded from file:/home/emanos/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
 java.vendor=N/A
 java.runtime.version=17.0.3+3
@@ -11,6 +11,3 @@ os.arch=amd64
 os.version=5.15.32-1-MANJARO
 derby.system.home=null
 Database Class Loader started - derby.database.classpath=''
-----------------------------------------------------------------
-Sun Apr 24 16:30:03 BRT 2022:
-Shutting down instance a816c00e-0180-5d00-7ce6-000003445c20 on database directory memory:/home/emanos/Downloads/curso/0c6e3624-ea1e-40d4-914d-b01689d3342e with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@2aae9190 
