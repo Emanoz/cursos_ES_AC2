@@ -24,6 +24,13 @@ class Topico {
     @OneToMany(mappedBy = "topico")
     var respostas: List<Resposta> = ArrayList()
 
+    constructor() {}
+    constructor(titulo: String?, mensagem: String?, curso: Curso?) {
+        this.titulo = titulo
+        this.mensagem = mensagem
+        this.curso = curso
+    }
+
     override fun hashCode(): Int {
         val prime = 31
         var result = 1

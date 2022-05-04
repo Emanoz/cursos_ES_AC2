@@ -14,6 +14,14 @@ class Usuario {
     var email: String? = null
     var senha: String? = null
 
+    constructor() {}
+    constructor(nome: String?, email: String?, senha: String?) : super() {
+        this.nome = nome
+        this.email = email
+        this.senha = senha
+        this.id = 1
+    }
+
     override fun hashCode(): Int {
         val prime = 31
         var result = 1
@@ -32,3 +40,4 @@ class Usuario {
         return true
     }
 }
+
