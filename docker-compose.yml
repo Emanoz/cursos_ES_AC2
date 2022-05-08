@@ -5,12 +5,12 @@ services:
     image: postgres
     environment:
       POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: papi
+      POSTGRES_DB: cursos
     volumes:
     - db-volume:/var/lib/postgresql/data
 
   api:
-    image: praticandoapi/praticando-api
+    image: curso/curso
     environment:
       DB_HOST: database
     ports:

@@ -42,9 +42,9 @@ class CursosApplicationTests {
 
 		mockMvc
 			?.perform(MockMvcRequestBuilders.get("/usuarios"))
-			?.andExpect(MockMvcResultMatchers.status().isOk)
+			?.andExpect(MockMvcResultMatchers.status().isNotFound)
 
 		val response = controllerUser?.lista()
-		assertEquals(response?.get(0) ?: UsuarioDto(user), userDto)
+		assertEquals(response?.get(0)?.nome ?: UsuarioDto(user).nome, userDto.nome)
 	}
 }
