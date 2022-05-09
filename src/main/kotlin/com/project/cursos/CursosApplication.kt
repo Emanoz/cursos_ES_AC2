@@ -11,7 +11,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2
 @Controller
 @SpringBootApplication
 @EnableSwagger2
-class PraticandoApiApplication {
+class CursosApplication {
 	@RequestMapping("/")
 	@ResponseBody
 	fun home(): String {
@@ -21,7 +21,7 @@ class PraticandoApiApplication {
 	companion object {
 		@JvmStatic
 		fun main(args: Array<String>) {
-			SpringApplication.run(PraticandoApiApplication::class.java, *args)
+			SpringApplication.run(CursosApplication::class.java, *args)
 		}
 	}
 }
