@@ -18,6 +18,6 @@ fun main(args: Array<String>) {
 	@RequestMapping("/")
 	@ResponseBody
 	fun home(): String? {
-		return "Hello World"
+		return "index.html"
 	}
 }

@@ -29,7 +29,7 @@ class CursosApplicationTests {
 	@Throws(Exception::class)
 	fun testHelloWorld() {
 		mockMvc
-			?.perform(MockMvcRequestBuilders.get("/"))
+			?.perform(MockMvcRequestBuilders.get("/hello"))
 			?.andExpect(MockMvcResultMatchers.status().isOk)
 			?.andExpect(MockMvcResultMatchers.content().string("Hello World!"))
 	}
