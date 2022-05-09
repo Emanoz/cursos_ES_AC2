@@ -10,14 +10,15 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2
 @Controller
 @SpringBootApplication
 @EnableSwagger2
-class CursosApplication
+class CursosApplication {
 
-fun main(args: Array<String>) {
-	runApplication<CursosApplication>(*args)
+	fun main(args: Array<String>) {
+		runApplication<CursosApplication>(*args)
 
-	@RequestMapping("/")
-	@ResponseBody
-	fun home(): String? {
-		return "index.html"
+		@RequestMapping("/")
+		@ResponseBody
+		fun home(): String? {
+			return "index.html"
+		}
 	}
 }
