@@ -10,7 +10,7 @@ services:
     - db-volume:/var/lib/postgresql/data
 
   api:
-    image: curso/curso
+    image: emanos010/cursos
     environment:
       DB_HOST: database
     ports:
