@@ -5,7 +5,7 @@ services:
     image: postgres
     environment:
       POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: adl123
+      POSTGRES_DB: blog-cursoscomp
     volumes:
     - db-volume:/var/lib/postgresql/data
 
