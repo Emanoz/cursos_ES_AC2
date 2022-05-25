@@ -19,7 +19,7 @@ class Usuario {
         this.nome = nome
         this.email = email
         this.senha = senha
-        this.id = 1
+        //this.id = 1
     }
 
     override fun hashCode(): Int {
