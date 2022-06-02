@@ -37,14 +37,14 @@ class CursosApplicationTests {
 	@Test
 	@Throws(Exception::class)
 	fun testListLogin() {
-		val user = Usuario(nome = "Emanuel", email = "emanuel@hotmail.com", senha = "123456")
+		val user = Usuario(nome = "Emanuel", email = "emanuel@hotmail.com", senha = "123456", id = 3)
 		val userDto = UsuarioDto(usuario = user)
 
 		mockMvc
 			?.perform(MockMvcRequestBuilders.get("/usuarios"))
-			?.andExpect(MockMvcResultMatchers.status().isNotFound)
+			?.andExpect(MockMvcResultMatchers.status().is4xxClientError)
 
 		val response = controllerUser?.lista()
-		assertEquals(response?.get(0)?.nome ?: UsuarioDto(user).nome, userDto.nome)
+		assertEquals(response?.get(2)?.nome ?: UsuarioDto(user).nome, userDto.nome)
 	}
 }

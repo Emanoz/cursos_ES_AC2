@@ -21,6 +21,13 @@ class Usuario {
         this.senha = senha
     }
 
+    constructor(nome: String?, email: String?, senha: String?, id: Long?) : super() {
+        this.nome = nome
+        this.email = email
+        this.senha = senha
+        this.id = id
+    }
+
     override fun hashCode(): Int {
         val prime = 31
         var result = 1
